@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - WhatsApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 500px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us via WhatsApp</h1>
+    <p>Need help or have a question? Chat with our team directly through WhatsApp. We're here for you!</p>
+    <a
+      class="whatsapp-button"
+      href="https://wa.me/6289513918591?text=Hi%20I%20need%20help%20with%20my%20order"
+      target="_blank"
+    >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      Chat via WhatsApp
+    </a>
+  </div>
+</body>
+</html>

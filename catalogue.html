@@ -1,0 +1,133 @@
+<section style="padding: 40px 20px; background: #fdfdfd; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 36px; margin-bottom: 10px; font-weight: 600;">Discover Our Collection</h2>
+  <p style="text-align: center; font-size: 16px; color: #666; max-width: 600px; margin: 0 auto 40px;">
+    Scroll and explore trendy outfits, curated just for you. Smooth UI. Easy shopping.
+  </p>
+
+  <div style="max-width: 1200px; margin: auto;">
+    <!-- Filters Row -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px;">
+      <select class="filter-select">
+        <option>All Categories</option>
+        <option>Jackets</option>
+        <option>Dresses</option>
+        <option>Tops</option>
+        <option>Pants</option>
+      </select>
+      <select class="filter-select">
+        <option>Color</option>
+        <option>Black</option>
+        <option>White</option>
+        <option>Red</option>
+        <option>Beige</option>
+      </select>
+      <select class="filter-select">
+        <option>Sort by</option>
+        <option>New Arrival</option>
+        <option>Price Low to High</option>
+        <option>Price High to Low</option>
+      </select>
+    </div>
+
+    <!-- Catalogue Grid -->
+    <div class="scroll-grid">
+      <!-- Card Item -->
+      <div class="product-card">
+        <img src="elegan.jpg" alt="Elegant Dress">
+        <h3>Elegant Summer Dress</h3>
+        <p>IDR 489K</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+      <div class="product-card">
+        <img src="jaket.jpg" alt="Urban Jacket">
+        <h3>Urban Black Jacket</h3>
+        <p>IDR 699K</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+      <div class="product-card">
+        <img src="set.jpg" alt="Casual Set">
+        <h3>Casual Beige Set</h3>
+        <p>IDR 559K</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+      <div class="product-card">
+        <img src="blazer.jpg" alt="Chic Blazer">
+        <h3>Chic Blazer</h3>
+        <p>IDR 499K</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+      <div class="product-card">
+        <img src="sweater.jpg" alt="Warm Sweater">
+        <h3>Warm Knitted Sweater</h3>
+        <p>IDR 429K</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+      <div class="product-card">
+        <img src="daily.jpg" alt="Daily Wear">
+        <h3>Daily Streetwear</h3>
+        <p>IDR 379K</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .filter-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 150px;
+  }
+
+  .scroll-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .product-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .product-card h3 {
+    margin: 15px 0 5px;
+    font-size: 18px;
+  }
+
+  .product-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .shop-btn {
+    padding: 10px 24px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .shop-btn:hover {
+    background: #333;
+  }
+</style>

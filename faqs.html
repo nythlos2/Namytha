@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - Frequently Asked Questions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .faq {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq h3 {
+      margin: 0;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .faq p {
+      display: none;
+      margin-top: 0.5rem;
+      color: #555;
+    }
+
+    .faq.open p {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+      <h3 onclick="toggleFAQ(this)">How can I track my order?</h3>
+      <p>You can track your order on our Order Tracking page by entering your order ID and email.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggleFAQ(this)">What is your return policy?</h3>
+      <p>We offer free returns within 14 days of delivery. Items must be in original condition.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggleFAQ(this)">Do you ship internationally?</h3>
+      <p>Yes, we offer international shipping with additional charges based on your country.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggleFAQ(this)">How do I contact customer support?</h3>
+      <p>You can contact us via WhatsApp or email at support mnamytha@gmail.com</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(element) {
+      element.parentElement.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Tracking - Modern Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+    }
+
+    .tracking-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    input[type="text"] {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      background-color: #ffbb00;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffaa00;
+    }
+
+    .status {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      border-left: 5px solid #ffbb00;
+      border-radius: 6px;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🛒 Order Tracking
+  </header>
+
+  <div class="container">
+    <div class="tracking-title">Track Your Order</div>
+    <div class="form-group">
+      <label for="order-id">Order ID</label>
+      <input type="text" id="order-id" placeholder="e.g. #123456789" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="text" id="email" placeholder="e.g. yourname@email.com" />
+    </div>
+    <button onclick="trackOrder()">Track Order</button>
+
+    <div class="status" id="order-status" style="display:none;">
+      📦 <strong>Status:</strong> Your order is currently <strong>On the Way</strong>. Estimated delivery: <strong>2-3 days</strong>.
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 ModernShop. All rights reserved.
+  </div>
+
+  <script>
+    function trackOrder() {
+      // Simulasi dummy status
+      const orderId = document.getElementById('order-id').value;
+      const email = document.getElementById('email').value;
+
+      if (orderId && email) {
+        document.getElementById('order-status').style.display = 'block';
+      } else {
+        alert('Please enter both Order ID and Email Address.');
+      }
+    }
+  </script>
+</body>
+</html>
